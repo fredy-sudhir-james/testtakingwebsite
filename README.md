@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Create React App Notes
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -13,11 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -39,32 +34,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Project Specific Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Used [Material UI](https://mui.com) for styles.
 
-### Code Splitting
+No results or calculations are done.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Available Pages
 
-### Analyzing the Bundle Size
+**1. Landing Page**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A simple landing page with Card like layout that takes the user to the test page based on selection.
+![landing-page](https://user-images.githubusercontent.com/39754501/194738685-4b11d8a3-a1de-4d6b-8b20-1f56a125b4b7.png)
 
-### Making a Progressive Web App
+**2. Test page**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The actual test page with question and choices. There is no validation as of now, so the user can click the Next button even without making a selection. Once the user reaches the last question the button text changes to **Submit**
+![test-page](https://user-images.githubusercontent.com/39754501/194738821-65621817-fe94-4600-965c-d03f2edf9866.png)
 
-### Advanced Configuration
+If the user refreshes while on the test page, an error like page is displayed
+![test-page-refresh](https://user-images.githubusercontent.com/39754501/194738839-968f45bc-6330-4513-bd09-b8a5a078d7ea.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**3. Submission page**
 
-### Deployment
+A dummy page to represent the completion of the test submission and to show the test results. Currently just plain text with a link to go to the landing page.
+![test-submission](https://user-images.githubusercontent.com/39754501/194738929-e36150fd-f7e3-4055-b980-f239c6f8bb70.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
